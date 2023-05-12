@@ -4,7 +4,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white; /* change the text color to white for better contrast against the dark background */
+  color: black; /* change the text color to white for better contrast against the dark background */
 }
 .div {
   background: linear-gradient(to right, #FF6347, #FF4500); /* Gradient from Tomato to OrangeRed color */
