@@ -4,7 +4,7 @@
   <title>Simple Crowdfunding Site</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
@@ -77,58 +77,26 @@
       <h1 class="text-center glass p-5">Welcome to KenyaFund</h1>
     </section>
     <!-- How It Works -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-<!-- ... -->
-
-<section>
-  <div class="swiper-container">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide">
-        <img src="images/A.jpeg" alt="Slide 1">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/B.jpeg" alt="Slide 2">
-      </div>
-      <div class="swiper-slide">
-        <img src="images/C.webp" alt="Slide 3">
-      </div>
-    </div>
-    <div class="swiper-pagination"></div>
-  </div>
-</section>
-
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    new Swiper('.swiper-container', {
-      loop: true,
-      autoplay: {
-        delay: 3000,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
-  });
-</script>
-
 <section>
   
   <section>
-    <div class="row justify-content-around">
-      <div class="col-md-3 glass p-3 animate__animated">
-        <h3>Step 1: Sign Up</h3>
-        <p>Register an account with us. It's quick and easy. Just click on the "Sign Up" link at the top of the page.</p>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/A.jpeg" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/B.jpeg" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+          <img src="images/C.webp" alt="Slide 3">
+        </div>
       </div>
-      <div class="col-md-3 glass p-3 animate__animated">
-        <h3>Step 2: Start a Fundraiser or Donate</h3>
-        <p>Once you have an account, you can start your own fundraiser or donate to existing ones. Click on "Start a Fundraiser" to begin your own campaign, or "Explore Campaigns" to see what others are doing.</p>
-      </div>
-      <div class="col-md-3 glass p-3 animate__animated">
-        <h3>Step 3: Share &amp; Connect</h3>
-        <p>Share your fundraiser with your network or connect with others who are passionate about the same causes. Your contribution can make a big difference.</p>
-      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Navigation -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
     </div>
   </section>
   
@@ -172,7 +140,7 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
     </section>
-    
+
     <!-- Charities -->
     <section>
       <h2 class="text-center glass p-5">Our Supported Charities</h2>
@@ -180,46 +148,42 @@
         <!-- Charity 1 -->
         <div class="col-md-4 glass p-3">
           <h3>Charity 1</h3>
-          <img src="images/charity1-image.jpg" alt="Charity 1" class="img-fluid">
+          <img src="charity1-image.jpg" alt="Charity 1" class="img-fluid">
           <p>A charity dedicated to improving education in rural areas.</p>
           <p><strong>End Time:</strong> 31 Dec 2023</p>
           <p><strong>Goal:</strong> $50,000</p>
           <button type="button" class="btn btn-primary">Learn More</button>
         </div>
-    
+      
         <!-- Charity 2 -->
         <div class="col-md-4 glass p-3">
           <h3>Charity 2</h3>
-          <img src="images/charity2-image.jpg" alt="Charity 2" class="img-fluid">
+          <img src="charity2-image.jpg" alt="Charity 2" class="img-fluid">
           <p>A charity focused on providing clean water to communities in need.</p>
           <p><strong>End Time:</strong> 15 Jan 2024</p>
           <p><strong>Goal:</strong> $75,000</p>
           <button type="button" class="btn btn-primary">Learn More</button>
         </div>
-    
+      
         <!-- Charity 3 -->
         <div class="col-md-4 glass p-3">
           <h3>Charity 3</h3>
-          <img src="images/charity3-image.jpg" alt="Charity 3" class="img-fluid">
+          <img src="charity3-image.jpg" alt="Charity 3" class="img-fluid">
           <p>A charity that works to preserve wildlife and natural habitats.</p>
           <p><strong>End Time:</strong> 22 Feb 2024</p>
           <p><strong>Goal:</strong> $60,000</p>
           <button type="button" class="btn btn-primary">Learn More</button>
         </div>
-    
+      
         <!-- Charity 4 -->
         <div class="col-md-4 glass p-3">
           <h3>Charity 4</h3>
-          <img src="images/charity4-image.jpg" alt="Charity 4" class="img-fluid">
+          <img src="charity4-image.jpg" alt="Charity 4" class="img-fluid">
           <p>A charity that supports development of medical infrastructure in underprivileged areas.</p>
           <p><strong>End Time:</strong> 15 Mar 2024</p>
           <p><strong>Goal:</strong> $90,000</p>
           <button type="button" class="btn btn-primary">Learn More</button>
         </div>
-    
-        <!-- More charities can be added in a similar way -->
-      </div>
-    </section>
         
         <!-- More charities can be added in a similar way -->
       </div>
@@ -235,67 +199,63 @@
       var signUpFormButton = document.getElementById('openSignUpForm');
       var signUpForm = document.getElementById('signUpForm');
 
-      signUpFormButton.addEventListener('click', function() {
-        if (signUpForm.classList.contains('d-none')) {
-          signUpForm.classList.remove('d-none');
-        } else {
-          signUpForm.classList.add('d-none');
-        }
-      });
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
 
-      signUpForm.addEventListener('submit', function(event) {
-        event.preventDefault();
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        var signupEmail = document.getElementById('signupEmail').value;
-        var signupPassword = document.getElementById('signupPassword').value;
-        var signupConfirmPassword = document.getElementById('signupConfirmPassword').value;
-
-        if (signupPassword !== signupConfirmPassword) {
-          alert("Passwords do not match");
-          return;
-        }
-
-        alert(`Signup Form submitted!
-               Email: ${signupEmail}`); // replace with your actual form handling code
-      });
-
-      var formButton = document.getElementById('openForm');
-      var form = document.getElementById('fundraiserForm');
-
-      formButton.addEventListener('click', function() {
-        if (form.classList.contains('d-none')) {
-          form.classList.remove('d-none');
-        } else {
-          form.classList.add('d-none');
-        }
-      });
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        var fundraiserName = document.getElementById('fundraiserName').value;
-        var fundraiserDescription = document.getElementById('fundraiserDescription').value;
-        var fundraiserGoal = document.getElementById('fundraiserGoal').value;
-
-        alert(`Fundraiser Form submitted!
-               Name: ${fundraiserName}
-               Description: ${fundraiserDescription}
-               Goal: ${fundraiserGoal}`); // replace with your actual form handling code
-      });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-  var elements = document.querySelectorAll('.animate__animated');
-  var delay = 0;
-  
-  elements.forEach(function(element) {
-    element.style.animationDelay = delay + 's';
-    element.classList.add('animate__fadeIn');
-    delay += 0.5;
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    effect: 'fade',
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
   });
-});
-  </script>
+</script>
+
 </body>
 </html>
+
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      loop: true,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+    });
+  </script>
+  <script src="quote.js"></script>
 
 </body>
 </html>
