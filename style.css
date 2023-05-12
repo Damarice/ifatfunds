@@ -5,6 +5,35 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: black; /* change the text color to white for better contrast against the dark background */
+  /* Add a transition to buttons */
+.btn {
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff6347;
+}
+
+/* Add an animation to the navigation links */
+.nav-link {
+  animation: fadeInDown 0.5s ease;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Add a hover effect to images */
+.img-fluid:hover {
+  transform: scale(1.1);
+}
+
 }
 .div {
   background: linear-gradient(to right, #FF6347, #FF4500); /* Gradient from Tomato to OrangeRed color */
