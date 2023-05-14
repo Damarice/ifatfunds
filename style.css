@@ -1,11 +1,24 @@
+.navbar-brand {
+  color: white !important;
+}
+
+.logo {
+  height: 30px; /* adjust as needed */
+  width: auto; /* keeps aspect ratio */
+  margin-right: 10px;
+}
+
+
+
 body {
   background: url('images/whitel.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: black; /* change the text color to white for better contrast against the dark background */
-  /* Add a transition to buttons */
+  color: black;
+}
+
 .btn {
   transition: background-color 0.3s ease;
 }
@@ -14,7 +27,6 @@ body {
   background-color: #ff6347;
 }
 
-/* Add an animation to the navigation links */
 .nav-link {
   animation: fadeInDown 0.5s ease;
 }
@@ -29,14 +41,13 @@ body {
     transform: translateY(0);
   }
 }
-/* Add a hover effect to images */
+
 .img-fluid:hover {
   transform: scale(1.1);
 }
 
-}
 .div {
-  background: linear-gradient(to right, #FF6347, #FF4500); /* Gradient from Tomato to OrangeRed color */
+  background: linear-gradient(to right, #FF6347, #FF4500);
   border-radius: 10px;
   border: 1px solid transparent;
   box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
@@ -91,6 +102,7 @@ body {
   margin-top: 10px;
   font-weight: bold;
 }
+
 #quote-section {
   background-color: #f9f9f9;
   padding: 50px 0;
@@ -107,12 +119,169 @@ body {
 
 #quote {
   font-size: 24px;
-  color: #000; /* color adjusted to black */
+  color: #000;
 }
 
 #quote-author {
   font-size: 18px;
-  color: #000; /* color adjusted to black */
+  color: #000;
   margin-top: 10px;
 }
 
+.blue-shade {
+  position: relative;
+}
+
+.blue-shade::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
+.onboarding-text {
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  color: #fff;
+  z-index: 10;
+  max-width: 70%;
+}
+
+.onboarding-text h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.onboarding-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.signup-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background: #0000ff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.signup-btn:hover {
+  transform: scale(1.1);
+}
+
+.signup-box {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+}
+
+.signup-box input,
+.signup-box .submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 50px;
+  border: none;
+}
+
+.signup-box .submit-btn {
+  background: #0000ff;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.signup-box .submit-btn:hover {
+  transform: scale(1.1);
+}
+
+.navbar-brand {
+  color: white;
+  font-family: 'Caveat', cursive;
+  font-size: 1.5em;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  z-index: 10;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 20px;
+  color: #000;
+}
+
+.swiper-button-next {
+  right: 10px;
+}
+
+.swiper-button-prev {
+  left: 10px;
+}
+.navbar {
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+.navbar-brand {
+  color: white;
+}
+.nav-link {
+  color: white;
+}
+#openForm {
+  transition: all 0.3s ease;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+  color: black;
+}
+#openForm:hover {
+  transform: scale(1.1);
+  border-radius: 50px;
+}
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+        }
+    

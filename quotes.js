@@ -24,3 +24,10 @@ const quotes = [
   displayRandomQuote();
   setInterval(displayRandomQuote, 10000); // Change quote every 10 seconds
   
+
+
+  document.getElementById('signupBtn').addEventListener('click', function() {
+    var signupBox = document.getElementById('signupBox');
+    signupBox.style.display = signupBox.style.display === 'none' ? 'block' : 'none';
+  });
+  

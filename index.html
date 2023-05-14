@@ -4,68 +4,81 @@
     <title>KenyaFund</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light glass">
-    <a class="navbar-brand" href="#">KenyaFund</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="openForm">Start a Fundraiser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="explore.html">Explore Campaigns</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="FAQ.html">FAQ</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#" id="openSignUpForm">Sign_Up</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <section>
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/A.jpeg" alt="Slide 1">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/B.jpeg" alt="Slide 2">
-        </div>
-        <div class="swiper-slide">
-          <img src="images/C.webp" alt="Slide 3">
-        </div>
+  <head>
+   
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light glass">
+      <a class="navbar-brand" href="#">
+        <img src="images/ww.png" alt="" class="logo"> KenyaFund
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="openForm">Start a Fundraiser</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="explore.html">Explore Campaigns</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="FAQ.html">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" id="openSignUpForm">Sign_Up</a>
+          </li>
+        </ul>
       </div>
-      <!-- Add Pagination -->
-      <div class="swiper-pagination"></div>
-      <!-- Add Navigation -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-    </div>
-  </section>
+    </nav>
+<!--sipper-->
+    <section class="blue-shade">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="onboarding-text">
+              <h1>Welcome to Slide 1</h1>
+              <p>Join us today and start your fundraising journey with KenyaFund. Let's make a difference together!</p>
+            </div>
+            <img src="images/A.jpeg" alt="Slide 1">
+          </div>
+          <div class="swiper-slide">
+            <div class="onboarding-text">
+              <h1>Welcome to Slide 2</h1>
+              <p>Explore our various campaigns and support a cause you believe in. Every contribution counts!</p>
+            </div>
+            <img src="images/B.jpeg" alt="Slide 2">
+          </div>
+          <div class="swiper-slide">
+            <div class="onboarding-text">
+              <h1>Welcome to Slide 3</h1>
+              <p>Got any questions? Check out our FAQ section or contact us directly. We're here to help!</p>
+            </div>
+            <img src="images/C.webp" alt="Slide 3">
+          </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      
+    </section>
+   
   <!--charity section-->
   <section class="charities">
     <div class="container">
@@ -173,6 +186,7 @@
       },
     });
   </script>
+
   <script src="quote.js"></script>
 
 </body>
