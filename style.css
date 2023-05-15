@@ -1,5 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-link {
+  color: #FFFFFF; /* default color */
+  transition: color 0.3s ease; /* smooth transition */
+}
+
+.nav-link:hover {
+  color: #ffffff; /* color on hover */
+}
+
 .navbar-brand {
-  color: white !important;
+  color: #FFFFFF; /* change the text color to white */
 }
 
 .logo {
@@ -9,6 +22,17 @@
 }
 
 
+.navbar-toggler {
+  border-color: #ffffff; /* Change the color of the toggler border */
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Change the color of the toggler icon */
+}
+
+.glass {
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background content behind the navbar */
+}
 
 body {
   background: url('images/whitel.jpg') no-repeat center center fixed;
@@ -46,13 +70,6 @@ body {
   transform: scale(1.1);
 }
 
-.div {
-  background: linear-gradient(to right, #FF6347, #FF4500);
-  border-radius: 10px;
-  border: 1px solid transparent;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-}
-
 .container {
   display: flex;
   justify-content: space-between;
@@ -76,12 +93,6 @@ body {
   transform: scale(1.05);
 }
 
-.logo {
-  width: 50%;
-  height: auto;
-  margin: 0 auto;
-}
-
 .learn-more {
   display: inline-block;
   margin-top: 10px;
@@ -98,190 +109,450 @@ body {
   background-color: #0056b3;
 }
 
-.goal {
-  margin-top: 10px;
-  font-weight: bold;
-}
-
 #quote-section {
   background-color: #f9f9f9;
   padding: 50px 0;
   text-align: center;
+
+}
+  .quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #quote {
+    font-size: 24px;
+    color: #000;
+  }
+  
+  #quote-author {
+    font-size: 18px;
+    color: #000;
+    margin-top: 10px;
+  }
+  
+  .blue-shade {
+    position: relative;
+  }
+  
+  
+  .blue-shade::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+  }
+  
+  .onboarding-text {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    color: #fff;
+    z-index: 10;
+    max-width: 70%;
+  }
+  
+  .onboarding-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .onboarding-text p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5em;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 60%;
 }
 
-.quote-container {
-  max-width: 800px;
-  margin: 0 auto;
+.swiper-slide {
+    position: relative;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+  
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+    color: #000;
+}
+  
+.swiper-button-next {
+    right: 10px;
+}
+  
+.swiper-button-prev {
+    left: 10px;
+}
+
+  
+  .signup-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background: #0000ff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .signup-box {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+  
+  .signup-box h2 {
+    margin-bottom: 20px;
+  }
+  
+  .signup-box input,
+  .signup-box .submit-btn {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    border: none;
+  }
+  
+  .signup-box .submit-btn {
+    background: #0000ff;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .signup-box .submit-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  .navbar {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  }
+  
+  #openForm {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    padding: 10px;
+    background: white;
+    color: black;
+  }
+  
+  #openForm:hover {
+    transform: scale(1.1);
+    border-radius: 50px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    height: 60%;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .swiper-button-next, .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+  }
+  
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  
+  #signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0; /* reduces the vertical padding */
+    width: 100%;
+  }
+  
+  #signup .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    max-width: 100%; /* makes the container fill the horizontal space */
+  }
+  
+  #signup h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  #signup .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  #signup .btn {
+    width: 100%;
+    padding: 0.75rem;
+  }
+
+ /* Quotes Section */
+#quotes {
+  background-color: #f0f0f0;
+  border-radius: 10px;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  transition: all 0.3s ease-in-out;
 }
 
-#quote {
+#quotes:hover {
+  box-shadow: 0 0 15px 5px #0000FF;
+}
+
+#quotes .quote-container {
+  max-width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 150px; /* Adjust as needed */
+}
+
+#quotes .quote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  animation: fadeInOut 5s linear infinite;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+#quotes .quote-text {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+#quotes .quote-author {
+  font-size: 1.2em;
+  text-align: right;
+  color: #aaa;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333;
+  color: #fff;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #555;
+}
+
+.testimonial-section {
+  background-color: #0357a7;
+  padding: 50px 0;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.testimonial {
+  width: 300px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(3, 87, 167, 0.5);
+  border-radius: 20px;
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+  transform: scale(1.1);
+}
+
+.testimonial-content {
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonial-content p {
+  margin-bottom: 20px;
+}
+
+.testimonial-author {
+  font-weight: bold;
+}
+
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px 0;
+  color: #fff;
+  border: 1px solid rgba(3, 87, 167, 0.5);
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+footer .social-icons a {
+  color: #fff;
+  margin: 0 10px;
+}
+
+footer .social-icons a:hover {
+  color: #0f1e2d;
+}
+
+footer .text-muted {
+  margin-bottom: 0;
+}
+
+/* FontAwesome Icons */
+footer .fab {
   font-size: 24px;
-  color: #000;
 }
 
-#quote-author {
-  font-size: 18px;
-  color: #000;
+#call-to-action {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.cta-title {
+  color: #333;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.cta-text {
+  color: #666;
   margin-top: 10px;
 }
 
-.blue-shade {
-  position: relative;
+.cta-btn {
+  font-size: 1.2rem;
+  padding: 10px 30px;
+  background-color: #007BFF;
+  border: none;
+  color: #fff;
+  transition: background-color 0.3s;
+  text-decoration: none;
+  border-radius: 5px;
 }
 
-.blue-shade::before {
+.cta-btn:hover {
+  background-color: #0056b3;
+}
+
+#my-section {
+  position: relative; /* ensures the pseudo-element is positioned relative to this element */
+  background: url('your-image-path.jpg') no-repeat center center fixed; /* replace 'your-image-path.jpg' with the path to your image */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#my-section::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5;
+  background: rgba(0, 0, 255, 0.5); /* the last value in the rgba function is the opacity - adjust as necessary */
 }
-
-.onboarding-text {
-  position: absolute;
-  top: 10%;
-  left: 5%;
-  color: #fff;
-  z-index: 10;
-  max-width: 70%;
-}
-
-.onboarding-text h1 {
-  font-family: 'Poppins', sans-serif;
-  font-size: 3em;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.onboarding-text p {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5em;
-}
-
-.swiper-slide {
-  position: relative;
-}
-
-.signup-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  padding: 10px 20px;
-  font-size: 1.2em;
-  background: #0000ff;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.signup-btn:hover {
-  transform: scale(1.1);
-}
-
-.signup-box {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  display: none;
-}
-
-.signup-box h2 {
-  margin-bottom: 20px;
-}
-
-.signup-box input,
-.signup-box .submit-btn {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 50px;
-  border: none;
-}
-
-.signup-box .submit-btn {
-  background: #0000ff;
-  color: #fff;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.signup-box .submit-btn:hover {
-  transform: scale(1.1);
-}
-
-.navbar-brand {
-  color: white;
-  font-family: 'Caveat', cursive;
-  font-size: 1.5em;
-}
-
-.swiper-button-next, .swiper-button-prev {
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.5);
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  z-index: 10;
-}
-
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 20px;
-  color: #000;
-}
-
-.swiper-button-next {
-  right: 10px;
-}
-
-.swiper-button-prev {
-  left: 10px;
-}
-.navbar {
-  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-}
-.navbar-brand {
-  color: white;
-}
-.nav-link {
-  color: white;
-}
-#openForm {
-  transition: all 0.3s ease;
-  border-radius: 10px;
-  padding: 10px;
-  background: white;
-  color: black;
-}
-#openForm:hover {
-  transform: scale(1.1);
-  border-radius: 50px;
-}
-
-        .swiper-container {
-            width: 100%;
-            height: 100%;
-        }
-        .swiper-slide img {
-            width: 100%;
-            height: auto;
-        }
-    
