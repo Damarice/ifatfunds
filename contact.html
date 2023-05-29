@@ -4,38 +4,27 @@
   <title>Contact - KenyaFund</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Custom CSS */
+    .left-content {
+      text-align: left;
+    }
+
+    .form-control-xl {
+      width: calc(100% * 4);
+    }
+
+    .textarea-xl {
+      width: calc(100% * 4);
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light glass">
-    <a class="navbar-brand" href="#">KenyaFund</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Start a Fundraiser</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="explore.html">Explore Campaigns</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="aboutus.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="FAQ.html">FAQ</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="signUp.html">Sign Up</a>
-        </li>
-      </ul>
-    </div>
+    <!-- Navbar content -->
   </nav>
 
-  <main class="container my-5">
+  <main class="container my-5 left-content">
     <!-- Contact -->
     <section>
       <h1 class="text-center glass p-5">Contact Us</h1>
@@ -44,15 +33,15 @@
           <form>
             <div class="form-group">
               <label for="name">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Enter your name">
+              <input type="text" class="form-control form-control-xl" id="name" placeholder="Enter your name">
             </div>
             <div class="form-group">
               <label for="email">Email address</label>
-              <input type="email" class="form-control" id="email" placeholder="Enter your email">
+              <input type="email" class="form-control form-control-xl" id="email" placeholder="Enter your email">
             </div>
             <div class="form-group">
               <label for="message">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message"></textarea>
+              <textarea class="form-control textarea-xl" id="message" rows="5" placeholder="Enter your message"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -62,7 +51,7 @@
   </main>
 
   <footer class="py-3 glass text-center">
-    <p>&copy; 2023 KenyaFund. All Rights Reserved.</p>
+    <!-- Footer content -->
   </footer>
 </body>
 </html>

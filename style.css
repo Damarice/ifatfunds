@@ -556,3 +556,31 @@ footer .fab {
   height: 100%;
   background: rgba(0, 0, 255, 0.5); /* the last value in the rgba function is the opacity - adjust as necessary */
 }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #000;
+    border-right-width: 0;
+    border-right-color: transparent;
+    font-weight: bold;
+  }
+
+  .push-right {
+    margin-left: 9rem; /* Adjust the margin-left value as needed */
+  }
+
+
+
+
+
+
+
+
+
